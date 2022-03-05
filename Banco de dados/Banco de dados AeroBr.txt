@@ -1,0 +1,34 @@
+create database aerobr;
+
+use aerobr;
+
+create table cliente
+(id int not null primary key auto_increment,
+ nome varchar(20) not null,
+ snome varchar (20) not null,
+ idade varchar(3) not null,
+ uf varchar(2),
+ contat varchar(50) not null, 
+ senha varchar(10) not null
+);
+
+/* NOMES DAS VARIÁVEIS:
+cod_Cli -> Código do cliente
+snome -> Sobrenome
+uf -> Unidade federativa
+contat -> E-mail */
+
+create table contato /*Tabela dos comentários e reclamações*/
+(id int not null primary key auto_increment, contat varchar(50) not null, coment varchar(200) not null) ENGINE = innodb;
+
+/*VARIÁVEL: pt_turist -> Ponto turístico
+
+INSERINDO OS VALORES NAS TABELAS*/
+
+insert into cliente (nome, snome, idade, uf, contat, senha) values ("Andryele", "Pires", "20", "RJ", "eleyrdnaserip@gmail.com", "9332");
+
+insert into contato (contat, coment) values ("andryele@gmail.com", "Não estou conseguindo me cadastrar na plataforma. Aguardo retorno.");
+
+select * from cliente;
+
+select * from contato;

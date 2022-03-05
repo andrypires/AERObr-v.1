@@ -1,0 +1,7 @@
+body {background-color:snow; font-family:Arial; color:purple}
+.cabecalho {background-color:rgb(170, 92, 170); color:white; border-radius:20px; text-align:center}
+h2, p {text-align:left}
+a {font-family:Arial; color:white; background-color:rgb(170,92,170); border-radius:5px;}
+img {border-radius:20px;}
+footer {background-color:{background-color:rgb(170, 92, 170); color:white; border-radius:20px; text-align:left;}
+.destinos {color:purple; align:ritgh; border-style:dashed; border-color:purple}
